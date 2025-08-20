@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>송일현의 자기소개</title> <!-- 1. 여기에 본인 이름 넣기 -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- 2. 여기에 style.css 파일 연결하기 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 네비게이션 바 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <!-- 3. 여기에 본인 이름이나 닉네임 넣기 -->
+      <a class="navbar-brand" href="#">🏠 송일현</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="메뉴 열기">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">My Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 메인 소개 섹션 -->
+  <section class="hero-section text-center py-5 animated-gradient">
+    <div class="container">
+      <!-- 5. 프로필 이미지 src에 본인 사진 URL 넣기 -->
+      <img src="images/myPhoto.jpg" alt="프로필 사진" class="profile-img rounded-circle mt-4">
+
+      <!-- 6. 본인 이름과 한 줄 소개 넣기 -->
+      <h1 class="display-4 glow-text">안녕하세요! 송일현 입니다</h1>
+      <p class="lead typing-cursor glow-text">웹 개발이 너무도 어색하지만 점점 발전하고 있는 중입니다.</p>
+
+      <!-- 7. Bootstrap 버튼 색상 클래스 선택 (btn-primary, btn-success, btn-info 중 선택) -->
+      <a href="#about" class="btn btn-outline-light wave-btn">더 알아보기</a>
+    </div>
+  </section>
+
+  <!-- About 섹션 -->
+  <section id="about" class="about-section py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">About Me</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <p>맥주를 좋아 합니다.</p>
+          <img src="images/beer.jpg" class="img-fluid rounded-5 my-item">
+        </div>
+        <div class="col-md-4">
+          <p text>스노우 보드 타는걸 좋아 합니다.</p>
+          <img src="images/snowboard.jpg" class="img-fluid rounded-5 my-item">
+        </div>
+        <div class="col-md-4">
+          <p>혼자 여행하는 걸 좋아합니다.</p>
+          <img src="images/trip.jpg" class="img-fluid rounded-5 my-item">
+        </div>
+      </div>
+      <div class="interests mb-4 mt-4">
+        <span class="badge bg-primary m-1">HTML</span>
+        <span class="badge bg-success m-1">CSS</span>
+        <span class="badge bg-info m-1">JavaScript</span>
+        <span class="badge bg-warning m-1">React</span>
+      </div>
+
+      <!-- C. Alert로 목표 표현 -->
+      <div class="alert alert-info" role="alert">
+        <strong>2025년 목표: </strong>풀스택 개발자 되기
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Skills 섹션 -->
+  <section id="skills" class="py-5 hero-section">
+    <div class="container text-center">
+      <h2 class="mb-4">My Skills</h2>
+      <div class="row">
+        <!-- 9. 본인의 스킬 3개 작성 -->
+        <div class="col-md-4 text-center mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">MFC</h5>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 78%">
+                  78%
+                </div>
+              </div>
+              <p class="card-text">윈도우용 장비제어 프로그램 개발</p>
+            </div>
+          </div>
+        </div>
+        <!-- 10. 나머지 2개 카드도 위와 같이 완성하기 -->
+        <div class="col-md-4 text-center mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">HTML/CSS</h5>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 20%">
+                  20%
+                </div>
+              </div>
+              <p class="card-text mb-1">선수학습 포함 약 1달 학습</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 10%">
+                  10%
+                </div>
+              </div>
+              <p class="card-text">선수학습으로 약 2주 학습</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects 섹션 -->
+  <section id="projects" class="py-5 about-section">
+    <div class="container text-center">
+      <h2 class="mb-4">My Projects</h2>
+      <div class="row">
+        <div class="col-md-4 text-center mb-3">
+          <div class="card">
+            <img src="images/xbirdie.png" class="project-img" alt="프로젝트1">
+            <div class="card-body">
+              <h5 class="card-title">X-Birdie</h5>
+              <p class="card-text">Golf lesson program</p>
+              <!-- <a href="images/xbirdie.png" target="_blank" class="btn btn-info">자세히 보기</a> -->
+              <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#imageModal"
+                data-bs-image="images/xbirdie.png">
+                자세히 보기
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <div class="card">
+            <img src="images/beautyCat.png" class="card-img-top project-img" alt="프로젝트2">
+            <div class="card-body">
+              <h5 class="card-title">예쁜 고양이</h5>
+              <p class="card-text">고양이가 예뻐서 그냥 넣어 봤음</p>
+              <!-- <a href="images/beautyCat.png" target="_blank" class="btn btn-info">자세히 보기</a> -->
+              <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#imageModal"
+                data-bs-image="images/beautyCat.png">
+                자세히 보기
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <div class="card">
+            <img src="images/html.webp" class="card-img-top project-img" alt="프로젝트">
+            <div class="card-body">
+              <h5 class="card-title">웹 프로그래밍 학습</h5>
+              <p class="card-text">HTML/CSS/Bootstrap 학습중</p>
+              <!-- <a href="images/html.webp" class="btn btn-info">자세히 보기</a> -->
+              <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#imageModal"
+                data-bs-image="images/html.webp">
+                자세히 보기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 타임라인 레이아웃 -->
+  <section class="hero-section">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2025</div>
+        <div class="timeline-content">
+          <h4>8월 20일 (수)</h4>
+          <p>Day 8 - 자기소개 페이지 클론코딩 프로젝트</p>
+        </div>
+      </div>
+      <!-- 추가 아이템들 -->
+    </div>
+  </section>
+
+  <!-- CSS 전용 탭 메뉴 -->
+  <div class="css-tabs bg-info">
+    <input type="radio" name="tabs" id="tab1" checked>
+    <label for="tab1">Education</label>
+
+    <input type="radio" name="tabs" id="tab2">
+    <label for="tab2">Experience</label>
+
+    <input type="radio" name="tabs" id="tab3">
+    <label for="tab3">Projects</label>
+
+    <div class="tab-content" id="content1">
+      <p>HTML/CSS/Bootstrap1</p>
+    </div>
+    <div class="tab-content" id="content2">
+      <p>HTML/CSS/Bootstrap2</p>
+    </div>
+    <div class="tab-content" id="content3">
+      <p>HTML/CSS/Bootstrap3</p>
+    </div>
+  </div>
+
+  <!-- Contact 섹션 -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Me</h2>
+      <!-- 11. 연락처 정보 추가 -->
+      <p>Email: lordangel82@gmail.com</p>
+      <p>Phone: 010-0000-0000</p>
+    </div>
+  </section>
+
+  <!-- 이미지 모달 -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="" id="modalImage" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const imageModal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+
+    imageModal.addEventListener('show.bs.modal', function (event) {
+      let button = event.relatedTarget; // 어떤 버튼에서 이벤트 발생했는지
+      let imgSrc = button.getAttribute('data-bs-image'); // 버튼에 있는 data-bs-image 값 가져오기
+      modalImage.src = imgSrc; // 모달 이미지 변경
+    });
+  </script>
+
+  <!-- Bootstrap JS 복사해서 붙여넣기 (햄버거 메뉴용) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
